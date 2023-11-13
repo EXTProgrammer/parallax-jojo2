@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: SFFedora;
+    src: url(/SFFedora.ttf);
+}
+
+@font-face{
+    font-family: Static;
+    src: url(/Static.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: blue;
+    font-weight: 800;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 70;
+    font-family: SFFedora;
+    text-shadow: 5px 10px black;
+}
+
+h1 span.tcolor1{
+   color: #bc0cf1;
+}
+
+h1 span.tcolor2{
+    color: red;
+}
+
+h2 span.kars{
+    color: #880808;
+    text-shadow: 5px 5px black;
+}
+
+h2 span.dio{
+    color: #F6D814;
+    text-shadow: 5px 5px black;
+}
+
+h2 span.kira{
+    color: #F5BEE5;
+    text-shadow: 5px 5px black;
+}
+
+h2 span.diavolo{
+    color: #CB2A53;
+    text-shadow: 5px 5px black;
+}
+
+h2 span.pucci{
+    color: #FBFBFB;
+    text-shadow: 5px 5px black;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: palevioletred;
+}
+main {
+    display: block;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 auto;
+    animation: surgir 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -5% cover 50%;
+}
+
+section.modulo.parallax h2{
+    font-size: 4em;
+    font-family: SFFedora;
+    text-align: center;
+    z-index: 50;
+}
+
+section.modulo p{
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 1.4em;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+section.modulo h3{
+    margin-bottom: 40px;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: gold;
+    font-family: Static;
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: #9f2b68;
+    background: linear-gradient(180deg, rgba(159,43,104,1) 0%, rgba(255,105,180,1) 50%, rgba(159,43,104,1) 100%);
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax-1{
+    background-image: url(https://images2.alphacoders.com/129/1295593.png);
+}
+section.modulo.parallax-2{
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3doMTZlM3Rvb3Z1eWJsYmNkMGw3cnQ4bGh6OXVjOThyaGhqYmk2YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rcQCZkpBGvvRueXVQu/giphy.gif);
+}
+section.modulo.parallax-3{
+    background-image: url(https://static.jojowiki.com/images/0/0d/latest/20191015220150/ZA_WARUDO.gif);
+}
+section.modulo.parallax-4{
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWgyYnRzYXIzenF4emRvdHRwYWRxNHhscGFwdDE1cXNocmZxenRxdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y7EaDUdbGio3ZfB4vv/giphy.gif);
+}
+section.modulo.parallax-5{
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGppZWxqZDVnd3RpZ3RpeG1lNnJjMGp4bHp3czh1c2d2ZWpyMGV6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1P6aXmMyVoAaax3WLu/giphy.gif);
+}
+
+section.modulo.parallax-6{
+    background-image: url(https://media.tenor.com/KgkZAyc6hfkAAAAd/made-in-heaven-jojo.gif);
+}
+
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 20%, rgb(159, 43, 104) 95%);
+}
+
+@keyframes surgir{
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+footer{
+    background-color: #9f2b68;
+    margin: 0;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Kanit', sans-serif;
+    color: #F6D814;
+}
+
+.galeria{
+    display: flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5em;
+    padding: 30px;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.galeria div:hover{
+    flex: 2;
+}
+
+.galeria:hover div:not(:hover){
+    filter: blur(3px);
+    filter: grayscale(1);
+}
+
+@media all and (max-width: 760px){
+    section.modulo p{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    section.modulo.parallax h1{
+        font-size: 2.5em;
+    }
+
+    section.modulo.parallax h2{
+        font-size: 2.5em;
+    }
+
+    section.modulo.content{
+        width: 100%;
+    }
+
+    .galeria{
+        display: flex;
+        height: 15em;
+        width: 19em;
+        margin: 2em;
+        gap: 0.5em;
+    }
+    
+    .galeria div{
+        flex: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
