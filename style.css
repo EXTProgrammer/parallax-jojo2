@@ -2,12 +2,12 @@
 
 @font-face{
     font-family: SFFedora;
-    src: url(/SFFedora.ttf);
+    src: url(SFFedora.ttf);
 }
 
 @font-face{
     font-family: Static;
-    src: url(/Static.ttf);
+    src: url(Static.ttf);
 }
 
 body{
